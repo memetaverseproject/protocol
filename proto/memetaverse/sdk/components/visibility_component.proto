@@ -1,0 +1,9 @@
+syntax = "proto3";
+package memetaverse.sdk.components;
+
+import "memetaverse/sdk/components/common/id.proto";
+option (common.ecs_component_id) = 1081;
+
+message PBVisibilityComponent {
+    optional bool visible = 1; // default=true
+}

@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+package memetaverse.sdk.components;
+import "memetaverse/common/colors.proto";
+import "memetaverse/sdk/components/common/id.proto";
+option (common.ecs_component_id) = 1087;
+
+// AvatarBase sets all modifiers over the avatar's apparence.
+message PBAvatarBase {
+  memetaverse.common.Color3 skin_color = 1;
+  memetaverse.common.Color3 eyes_color = 2;
+  memetaverse.common.Color3 hair_color = 3;
+  string body_shape_urn = 4;
+  string name = 5;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package memetaverse.sdk;
+// This file only imports all the modules exposed to the scenes to help the compiler
+// resolve all files without conflicts
+
+
+import public "memetaverse/kernel/apis/communications_controller.proto";
+import public "memetaverse/kernel/apis/dev_tools.proto";
+import public "memetaverse/kernel/apis/engine_api.proto";
+import public "memetaverse/kernel/apis/environment_api.proto";
+import public "memetaverse/kernel/apis/ethereum_controller.proto";
+import public "memetaverse/kernel/apis/parcel_identity.proto";
+import public "memetaverse/kernel/apis/permissions.proto";
+import public "memetaverse/kernel/apis/players.proto";
+import public "memetaverse/kernel/apis/portable_experiences.proto";
+import public "memetaverse/kernel/apis/restricted_actions.proto";
+import public "memetaverse/kernel/apis/runtime.proto";
+import public "memetaverse/kernel/apis/testing.proto";
+import public "memetaverse/kernel/apis/signed_fetch.proto";
+import public "memetaverse/kernel/apis/social_controller.proto";
+import public "memetaverse/kernel/apis/user_action_module.proto";
+import public "memetaverse/kernel/apis/user_identity.proto";
+import public "memetaverse/kernel/apis/scene.proto";
+import public "memetaverse/kernel/apis/comms_api.proto";

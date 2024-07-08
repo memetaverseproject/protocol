@@ -1,0 +1,22 @@
+syntax = "proto3";
+package memetaverse.kernel.apis;
+
+message RealSendRequest {
+  string message = 1;
+}
+
+message RealSendResponse {}
+
+message SendBinaryRequest {
+  repeated bytes data = 1;
+}
+
+message SendBinaryResponse {
+  repeated bytes data = 1;
+}
+
+service CommunicationsControllerService {
+  // @deprecated - This API should use a bidirectional binary stream in sdk7
+  rpc Send(RealSendRequest) returns (RealSendResponse) {}
+  rpc SendBinary(SendBinaryRequest) returns (SendBinaryResponse) {}
+}

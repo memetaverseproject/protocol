@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package memetaverse.quests;
+
+import public "memetaverse/quests/definitions.proto";

@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package memetaverse.realm;
+
+import public "memetaverse/realm/about.proto";

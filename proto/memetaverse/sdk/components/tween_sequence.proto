@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package memetaverse.sdk.components;
+
+import "memetaverse/sdk/components/common/id.proto";
+import "memetaverse/sdk/components/tween.proto";
+
+option (common.ecs_component_id) = 1104;
+
+message PBTweenSequence {
+  repeated PBTween sequence = 1;
+  optional TweenLoop loop = 2;
+}
+
+enum TweenLoop {
+  TL_RESTART = 0;
+  TL_YOYO = 1;
+}
